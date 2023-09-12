@@ -270,7 +270,6 @@ return [
 
 We welcome contributions from the community. If you find a bug, have a feature request, or want to improve the package, please open an issue or submit a pull request.
 
-## License
 
 ## License
 
