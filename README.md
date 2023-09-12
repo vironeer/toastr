@@ -39,7 +39,7 @@ Publish the package configuration file to customize Toastr settings:
 php artisan vendor:publish --tag=config
 ```
 
-### Assets Setup
+### Setup Assets 
 
 You can use (CDN) assets and render Toastr notifications :
 
