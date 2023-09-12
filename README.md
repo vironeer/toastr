@@ -44,11 +44,11 @@ php artisan vendor:publish --tag=config
 You can use (CDN) assets and render Toastr notifications :
 
 ```blade
-@toastrStyles {{-- use the latest version --}}
-@toastrStyles(1.0) {{-- use a specific version --}}
+@toastrStyles {{-- use the latest styles version --}}
+@toastrStyles(1.0) {{-- use a specific styles version --}}
 
-@toastrScripts {{-- use the latest version --}}
-@toastrScripts(1.0) {{-- use a specific version --}}
+@toastrScripts {{-- use the latest scripts version --}}
+@toastrScripts(1.0) {{-- use a specific scripts version --}}
 
 @toastrRender
 ```
@@ -108,13 +108,13 @@ use Toastr;
 Toastr::info('This is an info message', 'Info');
 
 // Display a success notification
-Toastr::success('Success!', 'Success');
+Toastr::success('This is a success message', 'Success');
 
 // Display a warning notification
-Toastr::warning('Warning!', 'Warning');
+Toastr::warning('This is a warning message', 'Warning');
 
 // Display an error notification
-Toastr::error('Error!', 'Error');
+Toastr::error('This is an error message', 'Error');
 ```
 
 ## Configuration
