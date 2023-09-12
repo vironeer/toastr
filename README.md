@@ -205,7 +205,7 @@ return [
         |
          */
 
-        'closeButtonIcon' => 'toast-close-icon',
+        'closeButtonIcon' => 'vironeer-toast-close-icon',
 
         /*
         |--------------------------------------------------------------------------
@@ -217,7 +217,7 @@ return [
         |
          */
 
-        'positionClass' => 'toast-top-right',
+        'positionClass' => 'vironeer-toast-top-right',
 
         /*
         |--------------------------------------------------------------------------
@@ -240,10 +240,10 @@ return [
          */
 
         'icons' => [
-            'info' => 'toast-info-icon',
-            'warning' => 'toast-warning-icon',
-            'success' => 'toast-success-icon',
-            'error' => 'toast-error-icon',
+            'info' => 'vironeer-toast-info-icon',
+            'warning' => 'vironeer-toast-warning-icon',
+            'success' => 'vironeer-toast-success-icon',
+            'error' => 'vironeer-toast-error-icon',
         ],
 
         /*
@@ -256,10 +256,10 @@ return [
          */
 
         'colorsClasses' => [
-            'info' => 'toast-info',
-            'warning' => 'toast-warning',
-            'success' => 'toast-success',
-            'error' => 'toast-error',
+            'info' => 'vironeer-toast-info',
+            'warning' => 'vironeer-toast-warning',
+            'success' => 'vironeer-toast-success',
+            'error' => 'vironeer-toast-error',
         ],
     ],
 
