@@ -36,7 +36,7 @@ composer require vironeer/toastr
 Publish the package configuration file to customize Toastr settings:
 
 ```bash
-php artisan vendor:publish --tag=config
+php artisan vendor:publish --tag=config --provider="Vironeer\Toastr\ToastrServiceProvider"
 ```
 
 ### Setup Assets 
@@ -56,7 +56,7 @@ You can use (CDN) assets and render Toastr notifications :
 Or you can publish the assets (CSS and JS) to your public directory:
 
 ```bash
-php artisan vendor:publish --tag=toastr-assets
+php artisan vendor:publish --tag=toastr-assets --provider="Vironeer\Toastr\ToastrServiceProvider"
 ```
 
 And include them in your HTML page:
