@@ -45,10 +45,10 @@ You can use (CDN) assets and render Toastr notifications :
 
 ```blade
 @toastrStyles {{-- use the latest styles version --}}
-@toastrStyles(1.0) {{-- use a specific styles version --}}
+@toastrStyles(1.0.0) {{-- use a specific styles version --}}
 
 @toastrScripts {{-- use the latest scripts version --}}
-@toastrScripts(1.0) {{-- use a specific scripts version --}}
+@toastrScripts(1.0.0) {{-- use a specific scripts version --}}
 
 @toastrRender
 ```
@@ -229,6 +229,17 @@ return [
          */
 
         'showIcon' => true,
+
+        /*
+        |--------------------------------------------------------------------------
+        | Prevent Duplicates
+        |--------------------------------------------------------------------------
+        |
+        | Enable or disable duplicating the toasts
+        |
+         */
+
+        'preventDuplicates' => true,
 
         /*
         |--------------------------------------------------------------------------
