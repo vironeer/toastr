@@ -73,11 +73,13 @@ class Toastr
     {
         $toast = null;
         if (Session::has('toastr')) {
-            $toastr = Session::get('toastr');
-            if ($toastr['title']) {
-                $toast = "toastr.{$toastr['type']}('{$toastr['message']}', '{$toastr['title']}');";
-            } else {
-                $toast = "toastr.{$toastr['type']}('{$toastr['message']}');";
+            $toastrs = Session::get('toastr');
+            foreach ($toastrs as $toastr) {
+                if ($toastr['title']) {
+                    $toast .= "toastr.{$toastr['type']}('{$toastr['message']}', '{$toastr['title']}');";
+                } else {
+                    $toast .= "toastr.{$toastr['type']}('{$toastr['message']}');";
+                }
             }
         }
         return $toast;
@@ -121,12 +123,17 @@ class Toastr
      * @param  string|null  $title
      * @return void
      */
+
     private static function message(string $type, string $message, string $title = null)
     {
-        Session::flash('toastr', [
+        $toastr = Session::get('toastr', []);
+
+        $toastr[] = [
             'type' => $type,
             'title' => $title,
             'message' => $message,
-        ]);
+        ];
+
+        Session::flash('toastr', $toastr);
     }
 }
