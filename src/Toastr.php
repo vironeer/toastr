@@ -131,7 +131,7 @@ class Toastr
         $toastr[] = [
             'type' => $type,
             'title' => $title,
-            'message' => $message,
+            'message' => addslashes($message),
         ];
 
         Session::flash('toastr', $toastr);
